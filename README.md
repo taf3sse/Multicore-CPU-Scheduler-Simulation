@@ -14,3 +14,16 @@ This C program simulates a multicore CPU scheduler that can handle multiple sche
   - Error Handling: Includes robust error handling for file operations, command-line argument validation, and scheduling algorithm validation.
 
 This simulation provides insights into how multicore CPUs manage and execute processes under different scheduling paradigms, useful for understanding operating system principles and CPU scheduling algorithms.
+
+Instructions to Compile and Run:
+  1. Use the gcc compiler to build the executable binary.
+
+     `gcc -o scheduler scheduler.c -pthread`
+     
+  3. Execute the compiled binary with the appropriate command-line arguments.
+
+     ` ./scheduler <filename> <algro1> <load1> <algro2> <load2> ...`
+   
+  4. Example Command:
+
+     `./scheduler processes.bin 1 0.3 2 0.4 3 0.3`
